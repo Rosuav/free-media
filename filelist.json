@@ -1,0 +1,13 @@
+{
+	"files": [{
+		"filename": "pie.gif",
+		"license": "CC-BY-SA 4.0/StilleBot",
+		"type": "image",
+		"description": "Pie graph that opens and closes. Might be considered reminiscent of a famous video game character :) Created using Python and matplotlib."
+	}, {
+		"filename": "pie_noclose.gif",
+		"license": "CC-BY-SA 4.0/StilleBot",
+		"type": "image",
+		"description": "Similar to pie.gif but opens and then resets; gives a clearer measurement of cycle time."
+	}]
+}
