@@ -14,3 +14,13 @@ with the following additional exemption:
     alert box, is permitted even without explicit attribution.
 
 Attribution is still welcomed, of course :)
+
+
+TODO:
+* Create a landing page that lists all the files, with thumbnails
+  - Autogenerate the actual content? Or fetch() it clientside and render the
+    same way that StilleBot does?
+* Expand the collection. Pick out some useful sounds, to save people the
+  trouble of searching? Or just omit that.
+* Collaborate with an artist to make some decent animations
+* Write a script to (re)build the JSON file. Make it a pre-commit hook.
