@@ -1,0 +1,16 @@
+# File list with comments. Will be transformed, relatively trivially, into the
+# JSON metadata file; however, this is the master file.
+
+Filename: pie.gif
+License: CC-BY-SA 4.0/StilleBot
+Type: Image
+Description: Pie graph that opens and closes. Might be considered reminiscent
+  of a famous video game character :) Created using Python and matplotlib.
+
+---
+
+Filename: pie_noclose.gif
+License: CC-BY-SA 4.0/StilleBot
+Type: Image
+Description: Similar to pie.gif but opens and then resets; gives a clearer
+  measurement of cycle time.
