@@ -2,6 +2,7 @@
 # To install: ln -s ../../build.py .git/hooks/pre-commit
 import json
 import os
+import mimetypes
 import sys
 import yaml # ImportError? pip install pyyaml
 
@@ -25,7 +26,7 @@ for f in files:
 		print("filelist.yaml:1: Malformed YAML entry", file=sys.stderr)
 		import pprint; pprint.pprint(f, stream=sys.stderr)
 		sys.exit(1)
-	if {"Filename", "License", "Type", "Description"} - set(f):
+	if {"Filename", "License", "Description"} - set(f):
 		print("filelist.yaml:%d: YAML entry lacks key attribute" % f["_line"], file=sys.stderr)
 		import pprint; pprint.pprint(f, stream=sys.stderr)
 		sys.exit(1)
@@ -35,10 +36,11 @@ for f in files:
 	if media[f["Filename"]]:
 		print("filelist.yaml:%d: File listed twice in YAML: %r" % (f["_line"], f["Filename"]), file=sys.stderr)
 		sys.exit(1)
-	if f["Type"] not in {"Image", "Audio"}:
-		# Does Video also need to be represented separately?
-		print("filelist.yaml:%d: File has invalid type: %r -> %r" % (f["_line"], f["Filename"], f["Type"]), file=sys.stderr)
+	mimetype, enc = mimetypes.guess_type(f["Filename"])
+	if not mimetype:
+		print("filelist.yaml:%d: MIME type detection failed: %r" % (f["_line"], f["Filename"]), file=sys.stderr)
 		sys.exit(1)
+	f["Type"] = mimetype # Not currently using the encoding, prob not necessary for audio/video files
 	media[f["Filename"]] = True
 	
 for fn, seen in media.items():
@@ -51,7 +53,7 @@ data = {"files": [
 	{
 		"filename": f["Filename"],
 		"license": f["License"],
-		"type": f["Type"].lower(),
+		"type": f["Type"],
 		"description": f["Description"],
 	}
 	for f in files
