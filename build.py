@@ -40,7 +40,7 @@ for f in files:
 	if not mimetype:
 		print("filelist.yaml:%d: MIME type detection failed: %r" % (f["_line"], f["Filename"]), file=sys.stderr)
 		sys.exit(1)
-	f["Type"] = mimetype # Not currently using the encoding, prob not necessary for audio/video files
+	f["MIMEType"] = mimetype # Not currently using the encoding, prob not necessary for audio/video files
 	media[f["Filename"]] = True
 	
 for fn, seen in media.items():
@@ -53,7 +53,7 @@ data = {"files": [
 	{
 		"filename": f["Filename"],
 		"license": f["License"],
-		"type": f["Type"],
+		"mimetype": f["MIMEType"],
 		"description": f["Description"],
 	}
 	for f in files
