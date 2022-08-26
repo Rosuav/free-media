@@ -55,6 +55,7 @@ data = {"files": [
 		"license": f["License"],
 		"mimetype": f["MIMEType"],
 		"description": f["Description"],
+		"creator": f.get("Creator"), "creatorlink": f.get("CreatorLink"),
 	}
 	for f in files
 ]}

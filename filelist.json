@@ -4,25 +4,33 @@
             "filename": "pie.gif",
             "license": "CC-BY-SA 4.0/StilleBot",
             "mimetype": "image/gif",
-            "description": "Pie graph that opens and closes. Might be considered reminiscent of a famous video game character :) Created using Python and matplotlib.\nCreated by Rosuav, twitch.tv/rosuav"
+            "description": "Pie graph that opens and closes. Might be considered reminiscent of a famous video game character :) Created using Python and matplotlib.\nCreated by Rosuav, twitch.tv/rosuav",
+            "creator": null,
+            "creatorlink": null
         },
         {
             "filename": "pie_noclose.gif",
             "license": "CC-BY-SA 4.0/StilleBot",
             "mimetype": "image/gif",
-            "description": "Similar to pie.gif but opens and then resets; gives a clearer measurement of cycle time.\nCreated by Rosuav, twitch.tv/rosuav"
+            "description": "Similar to pie.gif but opens and then resets; gives a clearer measurement of cycle time.\nCreated by Rosuav, twitch.tv/rosuav",
+            "creator": null,
+            "creatorlink": null
         },
         {
             "filename": "swords_hearts.webm",
             "license": "CC-BY-SA 4.0/StilleBot",
             "mimetype": "video/webm",
-            "description": "Sword-wielding persons have arrived! But they bring love. A great alert for when your friends come raiding.\nCreated by Maaya, twitch.tv/maaya"
+            "description": "Sword-wielding persons have arrived! But they bring love. A great alert for when your friends come raiding.\nCreated by Maaya, twitch.tv/maaya",
+            "creator": null,
+            "creatorlink": null
         },
         {
             "filename": "sub_sandwich.webm",
             "license": "CC-BY-SA 4.0/StilleBot",
             "mimetype": "video/webm",
-            "description": "Build a delicious sub sandwich with your favourite ingredients. A useful pun on \"subscriber\" for any other meaning of that word.\nCreated by Maaya, twitch.tv/maaya"
+            "description": "Build a delicious sub sandwich with your favourite ingredients. A useful pun on \"subscriber\" for any other meaning of that word.",
+            "creator": "Maaya",
+            "creatorlink": "https://twitch.tv/maaya"
         }
     ]
 }
