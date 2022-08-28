@@ -31,6 +31,14 @@
             "description": "Build a delicious sub sandwich with your favourite ingredients. A useful pun on \"subscriber\" for any other meaning of that word.",
             "creator": "Maaya",
             "creatorlink": "https://twitch.tv/maaya"
+        },
+        {
+            "filename": "gift_sub.webm",
+            "license": "CC-BY-SA 4.0/StilleBot",
+            "mimetype": "video/webm",
+            "description": "Mmmmmm, the best gift ever! It's the sub_sandwich in a fancy gift box - a gifted sub!",
+            "creator": "Maaya",
+            "creatorlink": "https://twitch.tv/maaya"
         }
     ]
 }
