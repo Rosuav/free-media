@@ -39,6 +39,38 @@
             "description": "Mmmmmm, the best gift ever! It's the sub_sandwich in a fancy gift box - a gifted sub!",
             "creator": "Maaya",
             "creatorlink": "https://twitch.tv/maaya"
+        },
+        {
+            "filename": "confetti_small.webm",
+            "license": "CC-BY-SA 4.0/StilleBot",
+            "mimetype": "video/webm",
+            "description": "A simple bit of confetti from a cannon. Bring on the hype!",
+            "creator": "Maaya",
+            "creatorlink": "https://twitch.tv/maaya"
+        },
+        {
+            "filename": "confetti_medium.webm",
+            "license": "CC-BY-SA 4.0/StilleBot",
+            "mimetype": "video/webm",
+            "description": "A bit of confetti from a cannon. Bring on the hype!",
+            "creator": "Maaya",
+            "creatorlink": "https://twitch.tv/maaya"
+        },
+        {
+            "filename": "confetti_big.webm",
+            "license": "CC-BY-SA 4.0/StilleBot",
+            "mimetype": "video/webm",
+            "description": "A good bit of confetti from a cannon. Bring on the hype!",
+            "creator": "Maaya",
+            "creatorlink": "https://twitch.tv/maaya"
+        },
+        {
+            "filename": "confetti_building.webm",
+            "license": "CC-BY-SA 4.0/StilleBot",
+            "mimetype": "video/webm",
+            "description": "Confetti from cannons, building over time, for maximum hype!",
+            "creator": "Maaya",
+            "creatorlink": "https://twitch.tv/maaya"
         }
     ]
 }
