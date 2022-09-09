@@ -41,6 +41,11 @@ for f in files:
 		print("filelist.yaml:%d: MIME type detection failed: %r" % (f["_line"], f["Filename"]), file=sys.stderr)
 		sys.exit(1)
 	f["MIMEType"] = mimetype # Not currently using the encoding, prob not necessary for audio/video files
+	if "URL" not in f:
+		# TODO: Allow shorthand identifiers eg "Host: Gideon" that will populate the URL
+		# using a different pattern. By default, they're hosted on GH Pages (all the small
+		# files). A full explicit URL can always be given.
+		f["URL"] = "https://rosuav.github.io/free-media/media/" + f["Filename"]
 	media[f["Filename"]] = True
 	
 for fn, seen in media.items():
@@ -56,6 +61,7 @@ data = {"files": [
 		"mimetype": f["MIMEType"],
 		"description": f["Description"],
 		"creator": f.get("Creator"), "creatorlink": f.get("CreatorLink"),
+		"url": f["URL"],
 	}
 	for f in files
 ]}

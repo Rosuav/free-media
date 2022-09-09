@@ -6,7 +6,8 @@
             "mimetype": "image/gif",
             "description": "Pie graph that opens and closes. Might be considered reminiscent of a famous video game character :) Created using Python and matplotlib.",
             "creator": "Rosuav",
-            "creatorlink": "https://twitch.tv/rosuav"
+            "creatorlink": "https://twitch.tv/rosuav",
+            "url": "https://rosuav.github.io/free-media/media/pie.gif"
         },
         {
             "filename": "pie_noclose.gif",
@@ -14,7 +15,8 @@
             "mimetype": "image/gif",
             "description": "Similar to pie.gif but opens and then resets; gives a clearer measurement of cycle time.",
             "creator": "Rosuav",
-            "creatorlink": "https://twitch.tv/rosuav"
+            "creatorlink": "https://twitch.tv/rosuav",
+            "url": "https://rosuav.github.io/free-media/media/pie_noclose.gif"
         },
         {
             "filename": "swords_hearts.webm",
@@ -22,7 +24,8 @@
             "mimetype": "video/webm",
             "description": "Sword-wielding persons have arrived! But they bring love. A great alert for when your friends come raiding.",
             "creator": "Maaya",
-            "creatorlink": "https://twitch.tv/maaya"
+            "creatorlink": "https://twitch.tv/maaya",
+            "url": "https://rosuav.github.io/free-media/media/swords_hearts.webm"
         },
         {
             "filename": "sub_sandwich.webm",
@@ -30,7 +33,8 @@
             "mimetype": "video/webm",
             "description": "Build a delicious sub sandwich with your favourite ingredients. A useful pun on \"subscriber\" for any other meaning of that word.",
             "creator": "Maaya",
-            "creatorlink": "https://twitch.tv/maaya"
+            "creatorlink": "https://twitch.tv/maaya",
+            "url": "https://rosuav.github.io/free-media/media/sub_sandwich.webm"
         },
         {
             "filename": "gift_sub.webm",
@@ -38,7 +42,8 @@
             "mimetype": "video/webm",
             "description": "Mmmmmm, the best gift ever! It's the sub_sandwich in a fancy gift box - a gifted sub!",
             "creator": "Maaya",
-            "creatorlink": "https://twitch.tv/maaya"
+            "creatorlink": "https://twitch.tv/maaya",
+            "url": "https://rosuav.github.io/free-media/media/gift_sub.webm"
         },
         {
             "filename": "confetti_small.webm",
@@ -46,7 +51,8 @@
             "mimetype": "video/webm",
             "description": "A simple bit of confetti from a cannon. Bring on the hype!",
             "creator": "Maaya",
-            "creatorlink": "https://twitch.tv/maaya"
+            "creatorlink": "https://twitch.tv/maaya",
+            "url": "https://rosuav.github.io/free-media/media/confetti_small.webm"
         },
         {
             "filename": "confetti_medium.webm",
@@ -54,7 +60,8 @@
             "mimetype": "video/webm",
             "description": "A bit of confetti from a cannon. Bring on the hype!",
             "creator": "Maaya",
-            "creatorlink": "https://twitch.tv/maaya"
+            "creatorlink": "https://twitch.tv/maaya",
+            "url": "https://rosuav.github.io/free-media/media/confetti_medium.webm"
         },
         {
             "filename": "confetti_big.webm",
@@ -62,7 +69,8 @@
             "mimetype": "video/webm",
             "description": "A good bit of confetti from a cannon. Bring on the hype!",
             "creator": "Maaya",
-            "creatorlink": "https://twitch.tv/maaya"
+            "creatorlink": "https://twitch.tv/maaya",
+            "url": "https://rosuav.github.io/free-media/media/confetti_big.webm"
         },
         {
             "filename": "confetti_building.webm",
@@ -70,7 +78,8 @@
             "mimetype": "video/webm",
             "description": "Confetti from cannons, building over time, for maximum hype!",
             "creator": "Maaya",
-            "creatorlink": "https://twitch.tv/maaya"
+            "creatorlink": "https://twitch.tv/maaya",
+            "url": "https://rosuav.github.io/free-media/media/confetti_building.webm"
         }
     ]
 }
