@@ -23,5 +23,8 @@ TODO:
 * Expand the collection. Pick out some useful sounds, to save people the
   trouble of searching? Or just omit that.
 * Make build.py a pre-commit hook.
+* Add a previewtime to the JSON file, and set that time to something suitable
+  for all videos that begin with a blank frame, or are otherwise poor showcases
+  of the actual animation.
 
 The machine-readable list of files is in [filelist.json](filelist.json).
