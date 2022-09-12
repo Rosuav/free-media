@@ -1,0 +1,5 @@
+.thumbnail {
+	width: 200px; height: 200px;
+	background: none center/contain no-repeat;
+	border: 1px solid rebeccapurple;
+}
