@@ -54,6 +54,7 @@ for f in files:
 		# files). A full explicit URL can always be given.
 		f["URL"] = "https://rosuav.github.io/free-media/media/" + f["Filename"]
 	media[f["Filename"]] = True
+	f["CreatorLink"] = creator_links.get(f["Creator"], "")
 	
 for fn, seen in media.items():
 	if not seen:
@@ -61,15 +62,9 @@ for fn, seen in media.items():
 		sys.exit(1)
 
 # Write out the JSON file
+json_keys = "Filename", "License", "MIMEType", "Description", "Creator", "CreatorLink", "URL"
 data = {"files": [
-	{
-		"filename": f["Filename"],
-		"license": f["License"],
-		"mimetype": f["MIMEType"],
-		"description": f["Description"],
-		"creator": f["Creator"], "creatorlink": creator_links.get(f["Creator"], ""),
-		"url": f["URL"],
-	}
+	{key.lower(): f[key] for key in json_keys if key in f}
 	for f in files if "Info" not in f
 ]}
 with open("filelist.json", "w") as f:
