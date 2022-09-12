@@ -30,6 +30,8 @@ async function populate_freemedia() {
 			"Created by ",
 			file.creator, " ",
 			file.creatorlink && A({href: file.creatorlink, target: "_blank"}, file.creatorlink),
+			BR(),
+			"License: ", file.license, //TODO: Link?
 		]),
 	])));
 }
