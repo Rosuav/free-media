@@ -62,7 +62,7 @@ for fn, seen in media.items():
 		sys.exit(1)
 
 # Write out the JSON file
-json_keys = "Filename", "License", "MIMEType", "Description", "Creator", "CreatorLink", "URL"
+json_keys = "Filename", "License", "MIMEType", "Description", "Creator", "CreatorLink", "PreviewTime", "URL"
 data = {"files": [
 	{key.lower(): f[key] for key in json_keys if key in f}
 	for f in files if "Info" not in f
