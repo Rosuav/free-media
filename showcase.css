@@ -1,5 +1,16 @@
+#freemedialibrary {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section {
+	border: 1px solid rebeccapurple;
+	padding: 0.5em;
+	margin: 0.5em;
+	max-width: min-content;
+}
+
 .thumbnail {
 	width: 200px; height: 200px;
 	background: none center/contain no-repeat;
-	border: 1px solid rebeccapurple;
 }

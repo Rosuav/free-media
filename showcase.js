@@ -1,5 +1,5 @@
 import choc, {set_content, DOM, on} from "https://rosuav.github.io/choc/factory.js";
-const {A, AUDIO, BR, DIV, FIGCAPTION, FIGURE, LABEL, P, VIDEO} = choc; //autoimport
+const {A, AUDIO, BR, DIV, FIGCAPTION, FIGURE, H2, P, SECTION, VIDEO} = choc; //autoimport
 const FREEMEDIA_ROOT = "https://rosuav.github.io/free-media/"; //Canonical home
 //const FREEMEDIA_ROOT = "http://localhost:8000/"; //Browse local files before uploading
 
@@ -16,7 +16,7 @@ function THUMB(file, noautoplay) {
 async function populate_freemedia() {
 	const data = await (await fetch(FREEMEDIA_ROOT + "filelist.json")).json();
 	console.log("Got free media", data);
-	set_content("#freemedialibrary", data.files.map(file => [
+	set_content("#freemedialibrary", data.files.map(file => SECTION([
 		FIGURE([
 			THUMB(file, true),
 			FIGCAPTION([
@@ -30,7 +30,7 @@ async function populate_freemedia() {
 			file.creator, " ",
 			file.creatorlink && A({href: file.creatorlink, target: "_blank"}, file.creatorlink),
 		]),
-	]));
+	])));
 }
 populate_freemedia();
 
