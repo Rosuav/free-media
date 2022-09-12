@@ -21,4 +21,5 @@ TODO:
   trouble of searching? Or just omit that.
 * Make build.py a pre-commit hook.
 
-The machine-readable list of files is in [filelist.json](filelist.json).
+The machine-readable list of files is in [filelist.json](filelist.json). A more
+human-friendly showcase can be found in [showcase.html](showcase.html).
