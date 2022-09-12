@@ -54,6 +54,7 @@
             "description": "A simple bit of confetti from a cannon. Bring on the hype!",
             "creator": "Maaya",
             "creatorlink": "https://twitch.tv/maaya",
+            "previewtime": 1.75,
             "url": "https://rosuav.github.io/free-media/media/confetti_small.webm"
         },
         {
@@ -63,6 +64,7 @@
             "description": "A bit of confetti from a cannon. Bring on the hype!",
             "creator": "Maaya",
             "creatorlink": "https://twitch.tv/maaya",
+            "previewtime": 1.75,
             "url": "https://rosuav.github.io/free-media/media/confetti_medium.webm"
         },
         {
@@ -72,6 +74,7 @@
             "description": "A good bit of confetti from a cannon. Bring on the hype!",
             "creator": "Maaya",
             "creatorlink": "https://twitch.tv/maaya",
+            "previewtime": 1.75,
             "url": "https://rosuav.github.io/free-media/media/confetti_big.webm"
         },
         {
@@ -81,6 +84,7 @@
             "description": "Confetti from cannons, building over time, for maximum hype!",
             "creator": "Maaya",
             "creatorlink": "https://twitch.tv/maaya",
+            "previewtime": 5.6,
             "url": "https://rosuav.github.io/free-media/media/confetti_building.webm"
         }
     ]

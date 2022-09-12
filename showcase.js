@@ -2,6 +2,7 @@ import choc, {set_content, DOM, on} from "https://rosuav.github.io/choc/factory.
 const {A, AUDIO, BR, DIV, FIGCAPTION, FIGURE, H2, P, SECTION, VIDEO} = choc; //autoimport
 const FREEMEDIA_ROOT = "https://rosuav.github.io/free-media/"; //Canonical home
 //const FREEMEDIA_ROOT = "http://localhost:8000/"; //Browse local files before uploading
+//const FREEMEDIA_ROOT = "/"; //Whatever place this page came from
 
 function THUMB(file, noautoplay) {
 	if (file.mimetype.startsWith("audio/")) return DIV({class: "thumbnail"}, AUDIO({src: file.url, controls: true}));
@@ -35,4 +36,9 @@ async function populate_freemedia() {
 populate_freemedia();
 
 on("pointerover", "video", e => e.match.play());
-on("pointerout", "video", e => e.match.pause());
+on("pointerout", "video", e => {
+	//For dev use, show the timestamp when you moused out. This will allow selection
+	//of a previewtime for both this display and StilleBot's library selector.
+	console.log("Out", e.match.src, e.match.currentTime);
+	e.match.pause();
+});
