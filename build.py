@@ -20,12 +20,19 @@ with open("filelist.yaml") as f:
 # the files and YAML entries correspond correctly.
 
 media = {f: False for f in os.listdir("media")}
+creator_links = { }
 
 for f in files:
 	if not isinstance(f, dict) or "_line" not in f:
 		print("filelist.yaml:1: Malformed YAML entry", file=sys.stderr)
 		import pprint; pprint.pprint(f, stream=sys.stderr)
 		sys.exit(1)
+	if "Info" in f:
+		if f["Info"] != "CreatorLink":
+			print("filelist.yaml:%d: Header block malformed" % f["_line"], file=sys.stderr)
+			sys.exit(1)
+		creator_links = f;
+		continue
 	if {"Filename", "License", "Description"} - set(f):
 		print("filelist.yaml:%d: YAML entry lacks key attribute" % f["_line"], file=sys.stderr)
 		import pprint; pprint.pprint(f, stream=sys.stderr)
@@ -60,10 +67,10 @@ data = {"files": [
 		"license": f["License"],
 		"mimetype": f["MIMEType"],
 		"description": f["Description"],
-		"creator": f.get("Creator"), "creatorlink": f.get("CreatorLink"),
+		"creator": f["Creator"], "creatorlink": creator_links.get(f["Creator"], ""),
 		"url": f["URL"],
 	}
-	for f in files
+	for f in files if "Info" not in f
 ]}
 with open("filelist.json", "w") as f:
 	json.dump(data, f, indent=4)
