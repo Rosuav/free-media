@@ -27,12 +27,12 @@ for f in files:
 		print("filelist.yaml:1: Malformed YAML entry", file=sys.stderr)
 		import pprint; pprint.pprint(f, stream=sys.stderr)
 		sys.exit(1)
-	if "Info" in f:
-		if f["Info"] != "CreatorLink":
+	match f.get("Info"):
+		case None: pass # Regular file entry
+		case "CreatorLink": creator_links = f; continue
+		case _:
 			print("filelist.yaml:%d: Header block malformed" % f["_line"], file=sys.stderr)
 			sys.exit(1)
-		creator_links = f;
-		continue
 	if {"Filename", "License", "Description"} - set(f):
 		print("filelist.yaml:%d: YAML entry lacks key attribute" % f["_line"], file=sys.stderr)
 		import pprint; pprint.pprint(f, stream=sys.stderr)
