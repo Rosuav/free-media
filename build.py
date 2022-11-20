@@ -54,7 +54,7 @@ for f in files:
 		# files). A full explicit URL can always be given.
 		f["URL"] = "https://rosuav.github.io/free-media/media/" + f["Filename"]
 	media[f["Filename"]] = True
-	f["CreatorLink"] = creator_links.get(f["Creator"], "")
+	if "CreatorLink" not in f: f["CreatorLink"] = creator_links.get(f["Creator"], "")
 	
 for fn, seen in media.items():
 	if not seen:

@@ -86,6 +86,24 @@
             "creatorlink": "https://twitch.tv/maaya",
             "previewtime": 5.6,
             "url": "https://rosuav.github.io/free-media/media/confetti_building.webm"
+        },
+        {
+            "filename": "multiple-coins-dropping.wav",
+            "license": "CC0",
+            "mimetype": "audio/x-wav",
+            "description": "Coin clink sounds, suitable for donation alerts.",
+            "creator": "Flem0527",
+            "creatorlink": "https://freesound.org/people/Flem0527/sounds/629985/",
+            "url": "https://rosuav.github.io/free-media/media/multiple-coins-dropping.wav"
+        },
+        {
+            "filename": "coin-drop-rattle.wav",
+            "license": "CC0",
+            "mimetype": "audio/x-wav",
+            "description": "Coin clink and rattle sound, suitable for donation alerts.",
+            "creator": "jmaimarc",
+            "creatorlink": "https://freesound.org/people/jmaimarc/sounds/19778/",
+            "url": "https://rosuav.github.io/free-media/media/coin-drop-rattle.wav"
         }
     ]
 }
