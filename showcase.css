@@ -14,3 +14,9 @@ section {
 	width: 200px; height: 200px;
 	background: none center/contain no-repeat;
 }
+
+audio {
+	/* Audio elements are too wide to fit. Slide them to the left, and guess how much width we get. */
+	margin-left: -40px;
+	max-width: 140%;
+}

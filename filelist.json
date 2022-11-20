@@ -93,7 +93,7 @@
             "mimetype": "audio/x-wav",
             "description": "Coin clink sounds, suitable for donation alerts.",
             "creator": "Flem0527",
-            "creatorlink": "https://freesound.org/people/Flem0527/sounds/629985/",
+            "creatorlink": "https://freesound.org/s/629985/",
             "url": "https://rosuav.github.io/free-media/media/multiple-coins-dropping.wav"
         },
         {
@@ -102,7 +102,7 @@
             "mimetype": "audio/x-wav",
             "description": "Coin clink and rattle sound, suitable for donation alerts.",
             "creator": "jmaimarc",
-            "creatorlink": "https://freesound.org/people/jmaimarc/sounds/19778/",
+            "creatorlink": "https://freesound.org/s/19778/",
             "url": "https://rosuav.github.io/free-media/media/coin-drop-rattle.wav"
         }
     ]

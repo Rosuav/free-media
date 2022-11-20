@@ -29,6 +29,7 @@ async function populate_freemedia() {
 		file.creator && P({class: "descr"}, [
 			"Created by ",
 			file.creator, " ",
+			//TODO: Ellipsize the link (in the middle) if it's too long
 			file.creatorlink && A({href: file.creatorlink, target: "_blank"}, file.creatorlink),
 			BR(),
 			"License: ", file.license, //TODO: Link?
