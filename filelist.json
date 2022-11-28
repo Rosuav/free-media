@@ -88,6 +88,15 @@
             "url": "https://rosuav.github.io/free-media/media/confetti_building.webm"
         },
         {
+            "filename": "piggy_bank_coins.webm",
+            "license": "CC-BY-SA 4.0/StilleBot",
+            "mimetype": "video/webm",
+            "description": "A piggy bank is made very happy by the arrival of some coins.",
+            "creator": "Maaya",
+            "creatorlink": "https://twitch.tv/maaya",
+            "url": "https://rosuav.github.io/free-media/media/piggy_bank_coins.webm"
+        },
+        {
             "filename": "multiple-coins-dropping.wav",
             "license": "CC0",
             "mimetype": "audio/x-wav",
